@@ -10,7 +10,7 @@ body{
 /*****clubs list header*******/
 
 .clubs-list-ui .main-container{
-    border-radius: 10px;
+    border-radius: 9px;
     box-shadow:rgba(0,0,0,.2) 0px 8px 29px 10px;
     background-color: #fff;
     height: 100%;
