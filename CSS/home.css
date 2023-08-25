@@ -1,0 +1,167 @@
+body{
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-image: url("../assets/Images/Chat-stuff-themes/chat-theme-01.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+body::-webkit-scrollbar{
+    width: 0;
+}
+
+.nav-w-slogan{
+    height: 100vh;
+    color: black;
+    background-size: 110vw;
+    background-repeat: no-repeat;
+}
+/************************NAVBAR*****************************/
+
+.navbar-nav a{
+    text-transform: uppercase;
+    transition: .3s;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.nav-link:hover{
+    letter-spacing: 4px;
+}
+
+
+/************************NAVBAR*****************************/
+
+/************************SLOGAN*****************************/
+.slogan .logo-name{
+    font-size: 10vh;
+    font-weight: bold;
+    animation: anim1 10s infinite;
+}
+
+.clg-name{
+    width: 100%;
+}
+
+
+/*@keyframes anim1 {
+    0%{
+        letter-spacing: 20px;
+        color: transparent
+    }
+    50%{
+        letter-spacing: 0px;
+        color: black;
+    }
+    100%{
+        letter-spacing: 20px;
+        color: transparent;
+    }
+}
+(@supports(-webkit-text-stroke: 1px white){
+    .slogan .logo-name .fill-text{
+        color: transparent;
+        font-size: 115px;
+        -webkit-text-stroke: 3px black;
+    }
+}*/
+
+.login-btn,.signup-btn,.chat-btn .btn{
+    border-radius: 30px;
+    transition: all .3s ease-in;
+}
+
+.slogan{
+    height: inherit;
+}
+
+
+
+.slogan .btn{
+    background-color: white;
+    letter-spacing: 1px;
+    border: none;
+    transition: .3s;
+}
+
+.slogan .btn:hover{
+    background: linear-gradient(to bottom left,#290a59,#ff7c00);
+    border: none;
+    letter-spacing: 4px;
+    color: white;
+}
+
+#Info h1{
+    font-weight: 700;
+}
+
+/************************SLOGAN*****************************/
+
+/************************CARDS*****************************/
+.Cards{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+    background-image: url("../assets/Images/Chat-stuff-themes/chat-theme-01.jpg");
+}
+
+.Cards h1{
+    font-size: 100px;
+}
+
+.card-body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.Cards .card{
+    width: 300px;
+    border: none;
+    box-shadow: 5px 5px 15px rgba(0,0,0,.2);
+}
+
+.card-body p{
+    align-self: center;
+}
+.Cards .btn{
+    background: linear-gradient(to bottom left,red,purple);
+    border: none;
+    border-radius: 70px;
+    color: white;
+    margin: 5px;
+    padding:10px 40px;
+    transition: .3s ease-in;
+    letter-spacing: 2px;
+}
+
+.Cards .btn:hover{
+    color: white;
+    letter-spacing: 5px;
+}
+
+/************************CARDS*****************************/
+
+footer .report{
+    width: 300px;
+    margin: auto;
+}
+
+.report .btn{
+    background-color: white;
+    color: black;
+}
+
+
+
+@media only screen and (max-width:992px){
+
+    .Cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

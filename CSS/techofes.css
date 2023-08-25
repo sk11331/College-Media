@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.main{
+    height: 100vh;
+}
+
+.main .container-fluid{
+    height: inherit;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.event-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.event-container li{
+    list-style: none;
+    margin: 15px;
+}
+
+.event-container .btn{
+    border: none;
+    letter-spacing: 2px;
+    background: linear-gradient(to bottom left,#290a59,#ff7c00);
+    transition: .3s;
+}
+
+.event-container .btn:hover{
+    letter-spacing: 4px;
+}
+
+.event-container .events{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    text-align: center;
+    padding: 0;
+}
+
+.event-container .events .events-row-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.event-container .events .events-row-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.event-container .events .events-row-2 li:nth-child(1){
+    justify-self: end;
+}
+
+.event-container .events .events-row-2 li:nth-child(2){
+    justify-self: start;
+}
+
+
+.events-details .item img{
+    transition: .3s;
+}
+
+.events-details .item img:hover{
+    transform: scale(1.1,1.1);
+}
+
+@media only screen and (max-width:600px){
+
+    .main .container-fluid{
+        height: inherit;
+        display: grid;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .event-container .events{
+        display: grid;
+        grid-template-rows: 60% 40%;
+        text-align: center;
+        padding: 0;
+        height: 300px;
+    }
+
+    .event-container .events li{
+        margin: 0;
+    }
+
+    .event-container .events .events-row-1{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .event-container .events .events-row-2{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .event-container .events .events-row-2 li:nth-child(1){
+        justify-self: center;
+    }
+    
+    .event-container .events .events-row-2 li:nth-child(2){
+        justify-self: start;
+    }
+
+}
+
+@media only screen and (min-width:600px){
+    .events-details .img-container img{
+        width: 500px;
+        height: 500px;
+    }
+
+}
+
+

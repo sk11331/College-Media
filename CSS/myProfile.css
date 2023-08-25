@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+.container-fluid{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+body::-webkit-scrollbar{
+    width: 0;
+}
+
+.profile{
+    background-image: url("../assets/Images/Events/events-bg.png");
+    background-size: cover; 
+    height: 300px;
+}
+
+.profile-img{
+    z-index: 2;
+}
+.profile-name{
+    position: absolute;
+    height: inherit;
+    letter-spacing: 20px;
+    opacity: .9;
+    z-index: 1;
+}
+
+.profile .back-btn{
+    position: absolute;
+    left: 10px;
+}
+.profile-img img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.edit-icon i:hover{
+    opacity: .9;
+}
+
+.pwd-show-icon img{
+    opacity: .5;
+}
+
+.pwd-show-icon:hover img{
+    opacity: 1;
+}
+
+.save-btn .btn{
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: linear-gradient(to right,#F8074B,#fa386f);
+    transition: all .3s ease-in-out;
+    outline: none;
+}
+
+.save-btn .btn:hover{
+    letter-spacing: 2px;
+}
+
+input[name="fname"],input[name="course"],input[name="dept"]{
+    margin-right: 15px;
+}
+
+.academic-label{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+label{
+    margin-bottom: 5px;
+    margin-left: 2px;
+}

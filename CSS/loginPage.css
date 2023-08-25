@@ -1,0 +1,250 @@
+body{
+    outline: none;
+    overflow: hidden;
+    margin: 0;
+    background-color: #f0f0f0 ;
+}
+
+.container-fluid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/*******Form-container********/
+
+.signup-form,.login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-in-out;
+}
+
+.signup-form i,.login-form i{
+    color: crimson;
+}
+
+.signup-form form,.login-form form{
+    width: inherit;
+    background: url("../assets/Images/login_bg.png");
+    background-size: cover;
+    padding: 70px 70px;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.login-form{
+    transform: translateX(-200%);
+}
+
+
+.error_msg{
+    color:white;
+    padding: 5px;
+    background: lightcoral;
+    border-radius: 10px;
+    display: none;
+}
+/*******Form-container********/
+
+
+
+/******Input fields******/
+
+.input-group{
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3) ;
+    border-radius: 50px;
+    background: white;
+}
+
+.form-control{
+    outline: none;
+    padding: 10px;
+    background: none;
+    border-style: none;
+}
+
+.input-group-text{
+    border-style: none;
+}
+.pwd-show-icon img{
+    opacity: .5;
+}
+
+.pwd-show-icon:hover img{
+    opacity: 1;
+}
+/******Input fields******/
+
+
+
+/*******Buttons********/
+
+.submit-btn .btn{
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: linear-gradient(to right,#F8074B,#fa386f);
+    transition: all .3s ease-in-out;
+    outline: none;
+}
+
+.submit-btn .btn:hover{
+    letter-spacing: 2px;
+}
+/*******Buttons********/
+
+.text{
+    color: black;
+}
+
+
+
+/*******Social-media icons*******/
+.social-media{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media i{
+    color: crimson;
+    transition: 0.5s;
+}
+
+.social-media a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    border-radius: 5px;
+}
+
+.social-media a:hover{
+    transform: scale(1.1,1.1);
+}
+
+/*******Social-media icons*******/
+
+
+
+/*******overlay*******/
+
+.panel-left,.panel-right{
+    padding: 0;
+    width: 50%;
+    height: inherit;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../assets/Images/login_bg.png");
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    z-index: 10;
+    transition: .5s ease-in;
+    transition-delay: .5s;
+}
+
+.panel-content{
+    display: flex;
+    color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;    
+}
+
+.panel-content i{
+    font-size: 80px;
+    background: linear-gradient(to right,#290a59,#ff7c00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.panel-content p{
+    font-weight: bold;
+    letter-spacing: 3px;
+    width: 50%;
+}
+
+.panel-content h2{
+    font-weight: bold;
+    letter-spacing: 3px;  
+    background-image: linear-gradient(to bottom left,#290a59,#ff7c00);
+    background-clip: unset;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.panel-left{
+    transition: .5s ease-in;
+}
+
+.panel-right{
+    transform: translateX(200%);
+    transition: .5s ease-in;
+}
+
+.panel-content .btn{
+    background: linear-gradient(to bottom left,#290a59,#ff7c00);
+    border: none;
+    border-radius: 70px;
+    color: white;
+    margin: 5px;
+    padding:10px 40px;
+    transition: .3s ease-in;
+}
+
+.panel-content .btn:hover{
+    letter-spacing: 3px;
+}
+
+/*******overlay*******/
+
+
+@media only screen and (max-width:992px){
+    body{
+        outline: none;
+        overflow: scroll;
+        margin: 0;
+        background-color: #f0f0f0 ;
+    }
+    
+    .container-fluid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200vh;
+    }
+
+    .panel-right,.panel-left{
+        display: none;
+    }
+
+    .login-form{
+        transform: translateX(0);
+        
+    }
+    .signup-form{
+        transform: translateX(0);
+    }
+
+    .login-container,.signup-container{
+        flex: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+}
